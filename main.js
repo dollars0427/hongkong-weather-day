@@ -1,5 +1,5 @@
-const fs = require('fs');
-const Weather = require('./lib/weather');
+import fs from 'fs';
+import Weather from './lib/weather.js';
 
 const configFile = fs.readFileSync('config.json');
 const config = JSON.parse(configFile);
@@ -8,10 +8,12 @@ const baseUrl = config.apiUrl;
 const format = config.format;
 
 const HKWeather = {
-  getAllTemp(date){
-    const formatDate = date.replace('/', '');
-    console.log(formatDate);
+  async getAllTemp(date){
+    //All of the date which input by user should be formated to call API.
+    const formatedDate = date.replace(/\//g, '');
+    const weather = await Weather.fetchWeather(baseUrl, format, formatedDate);
+    return weather;
   },
 };
 
-module.exports = HKWeather;
+export default HKWeather;
