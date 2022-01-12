@@ -1,3 +1,4 @@
 {
-  "apiUrl": "https://www.hko.gov.hk/wxinfo/dailywx/yeswx/DYN_DAT_MINDS_RYES20211221.json"
+  "apiUrl": "https://www.hko.gov.hk/wxinfo/dailywx/yeswx/DYN_DAT_MINDS_RYES",
+  "format": ".json"
 }
