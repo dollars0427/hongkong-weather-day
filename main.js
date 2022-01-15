@@ -19,7 +19,7 @@ const HKWeather = {
     const weather = await Weather.fetchWeather(baseUrl, format, formatedDate);
     return weather;
   },
-  async getRaining(date){
+  async getRainfall(date){
     const formatedDate = date.replace(/\//g, '');
     const weather = await Weather.fetchWeather(baseUrl, format, formatedDate);
     const raining = weather['DYN_DAT_MINDS_RYES']['HKOReadingsRainfall']['Val_Eng'];

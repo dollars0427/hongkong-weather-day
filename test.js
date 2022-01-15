@@ -6,6 +6,6 @@ testing();
 
 async function testing(){
   //const temps = HKWeather.getAllTemp('2021/11/21');
-  const raining = await HKWeather.getRaining('2021/11/21');
+  const raining = await HKWeather.getRainfall('2021/11/21');
   console.log(raining);
 }
