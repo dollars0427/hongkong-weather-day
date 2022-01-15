@@ -1,4 +1,11 @@
 /* This file is for testing the function of library. */
 
 import HKWeather from './main.js';
-const temps = HKWeather.getAllTemp('2021/11/21');
+
+testing();
+
+async function testing(){
+  //const temps = HKWeather.getAllTemp('2021/11/21');
+  const raining = await HKWeather.getRaining('2021/11/21');
+  console.log(raining);
+}
