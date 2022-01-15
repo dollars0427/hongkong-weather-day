@@ -1,5 +1,12 @@
 {
+  "name": "hongkong-weather-day",
   "type": "module",
+  "version": "0.0.1",
+  "description": "A Node.js Library for return the weather of specify date ",
+  "author": "Mr.Twister <sardo.ip@sardo.work>",
+  "main": "./main.js",
+  "private": false,
+  "license": "GPLv3",
   "dependencies": {
     "node-fetch": "^3.1.0"
   }
